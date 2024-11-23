@@ -12,6 +12,31 @@
         height: 300px;
         border-radius: 80%;
       }
+      .contact-icons:hover {
+      filter: blur(1px); /* Apply blur effect */
+      transition: filter 0.1s ease; /* Smooth transition for the effect */
+      }
+      .profile-image {
+  width: 290px;
+  height: 300px;
+  border-radius: 50%; /* Ensures the image is circular */
+  border: 5px solid transparent; /* Optional: Adds space between the image and the glow */
+  box-shadow: 0 0 15px 5px rgba(9, 229, 225, 0.8); /* Initial glow */
+  animation: pulse 2s infinite; /* Apply the glowing animation */
+}
+
+/* Define the glowing animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 15px 5px rgba(9, 229, 225, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(9, 229, 225, 0.8); /* More intense glow */
+  }
+  100% {
+    box-shadow: 0 0 15px 5px rgba(9, 229, 225, 0.8); /* Return to initial glow */
+  }
+}
     </style>
   </head>
   <body>
@@ -35,7 +60,7 @@
         <p>A Software Developer</p>
         <div class="contact-logos">
           <a href="mailto:rahulgolabhavi@gmail.com">
-            <img src="Assets/mail.png" alt="Email Icon" class="contact-icon" />
+            <img src="Assets/mail.png" alt="Email Icon" class="contact-icons" />
           </a>
           <a
             href="https://www.linkedin.com/in/rahul-r-golabhavi/"
@@ -47,10 +72,10 @@
               class="contact-icons"
             />
           </a>
-          <a href="https://www.instagram.com/rahulr_2925/" target="_blank">
+          <a href="https://github.com/RahulRGolabhavi" target="_blank">
             <img
-              src="Assets/instagram-logo.png"
-              alt="Instagram"
+              src="Assets/github logo.png"
+              alt="Git Hub"
               class="contact-icons"
             />
           </a>
@@ -60,13 +85,21 @@
           >
             <img src="Assets/resume.webp" alt="Resume" class="contact-icons" />
           </a>
+          <a href="https://www.instagram.com/rahulr_2925/" target="_blank">
+            <img
+              src="Assets/instagram-logo.png"
+              alt="Instagram"
+              class="contact-icons"
+            />
+          </a>
+          
         </div>
       </section>
       <section class="image-right">
         <img
-          class="profile-image"
           src="Assets/profile-image.jpg"
           alt="Profile Image"
+          class="profile-image"
         />
       </section>
     </main>
